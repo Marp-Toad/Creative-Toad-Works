@@ -332,7 +332,7 @@ System::Void ARM::MyForm::button9_Click(System::Object^ sender, System::EventArg
 System::Void ARM::MyForm::button10_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	SmtpClient^ Smtp = gcnew SmtpClient("smtp.mail.ru", 25);
-	Smtp->Credentials = gcnew NetworkCredential("nneozen@mail.ru", "BHVG8TTRpU4d56BQK3Sj");
+	Smtp->Credentials = gcnew NetworkCredential("nneozen@mail.ru", "спец ключ для приложений");
 	Smtp->EnableSsl = true;
 
 	MailMessage^ Message = gcnew MailMessage();
