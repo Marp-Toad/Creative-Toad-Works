@@ -114,8 +114,8 @@ namespace WpfApp
                             var bmp = new BitmapImage();
                             bmp.BeginInit();
                             bmp.CacheOption = BitmapCacheOption.OnLoad;
-                            bmp.DecodePixelWidth = fragWidth;   // Оптимизация памяти
-                            bmp.DecodePixelHeight = fragHeight; // Оптимизация памяти
+                            bmp.DecodePixelWidth = fragWidth;
+                            bmp.DecodePixelHeight = fragHeight;
                             bmp.StreamSource = ms;
                             bmp.EndInit();
                             bmp.Freeze();
@@ -126,7 +126,6 @@ namespace WpfApp
                                 window1.AddFragment(fragment, bmp);
                             });
 
-                            // Явно освобождаем ресурсы
                             bmp = null;
                         }
                         catch (Exception ex)
@@ -147,7 +146,7 @@ namespace WpfApp
 
             GenerateFragmentIndices(count);
             Window1 window1 = new Window1(count, width, height);
-            window1.Owner = this; // Привязываем к главному окну
+            window1.Owner = this;
             window1.Closed += (s, args) =>
             {
                 window1.ClearAllImages();
