@@ -44,19 +44,19 @@ namespace WpfApp
         {
             base.OnClosed(e);
 
-            // Полная очистка изображений
+
             foreach (var item in FragmentItems)
             {
                 item.DisposeImage();
             }
             FragmentItems.Clear();
 
-            // Принудительный сбор мусора
+
             GC.Collect();
             GC.WaitForPendingFinalizers();
         }
 
-        // Добавляем метод для принудительного освобождения
+
         public void ClearAllImages()
         {
             foreach (var item in FragmentItems)
