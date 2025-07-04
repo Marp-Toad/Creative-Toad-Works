@@ -1,4 +1,0 @@
-C:\Users\Mega Toad\source\repos\ARM\ARM\Debug\ARM.vcxproj.AssemblyReference.cache
-C:\Users\Mega Toad\source\repos\ARM\ARM\Debug\ARM.vcxproj.SuggestedBindingRedirects.cache
-C:\Users\Mega Toad\source\repos\ARM\ARM\Debug\ARM.MyForm.resources
-C:\Users\Mega Toad\source\repos\ARM\ARM\Debug\ARM.vcxproj.GenerateResource.cache
